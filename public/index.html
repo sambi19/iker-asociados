@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iker &amp; Asociados | Estudio Jurídico &mdash; Derecho Penal y de Familia</title>
+<meta name="description" content="Estudio Jurídico Iker &amp; Asociados. Abogados especialistas en Derecho Penal (detenciones, prisión preventiva, cesación) y Derecho de Familia (alimentos, divorcios, tenencia, régimen de visitas). Asesoría legal inmediata.">
+<meta name="theme-color" content="#0d1b3e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estudio Jurídico Iker &amp; Asociados">
+<meta property="og:description" content="Especialistas en Derecho Penal y Derecho de Familia. Defensa inmediata 24/7.">
+<meta property="og:locale" content="es_PE">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230d1b3e'/><text x='50' y='70' font-size='50' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23c9a227'>I%26A</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --navy:#0d1b3e; --navy-800:#122350; --navy-700:#1b2f66;
+  --gold:#c9a227; --gold-soft:#e2c368; --gold-dim:#8d701a;
+  --ink:#161a24; --muted:#5c6377; --line:#e3e6ee;
+  --bg:#ffffff; --bg-alt:#f6f7fb; --card:#ffffff;
+  --wa:#25d366;
+  --shadow:0 1px 2px rgba(13,27,62,.06),0 12px 32px -12px rgba(13,27,62,.18);
+  --radius:14px; --max:1140px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16.5px;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;line-height:1.14;margin:0;letter-spacing:-.01em}
+.wrap{width:min(100% - 2.5rem,var(--max));margin-inline:auto}
+.eyebrow{font-family:Inter,sans-serif;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-dim);margin:0 0 .9rem}
+.rule{width:54px;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-soft));border-radius:3px;margin:1rem 0 1.6rem}
+.center{text-align:center}.center .rule{margin-inline:auto}
+
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.95rem;padding:.92rem 1.6rem;border-radius:10px;border:1.5px solid transparent;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:#20180a;box-shadow:0 8px 22px -8px rgba(201,162,39,.7)}
+.btn-ghost{border-color:rgba(255,255,255,.34);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-wa{background:var(--wa);color:#04310f;box-shadow:0 8px 22px -8px rgba(37,211,102,.65)}
+.btn-dark{background:var(--navy);color:#fff}
+
+.topbar{background:var(--navy-800);color:#cfd6e8;font-size:.8rem;padding:.5rem 0}
+.topbar .wrap{display:flex;gap:1.4rem;justify-content:center;flex-wrap:wrap;align-items:center}
+.topbar a:hover{color:var(--gold-soft)}
+header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .25s}
+header.nav.scrolled{box-shadow:0 6px 24px -14px rgba(13,27,62,.5)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.72rem 0}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand .mark{width:44px;height:44px;border-radius:11px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-family:"Cormorant Garamond",serif;font-weight:700;font-size:1.16rem;letter-spacing:-.03em;flex:none}
+.brand b{display:block;font-family:"Cormorant Garamond",serif;font-size:1.24rem;line-height:1.05;color:var(--navy)}
+.brand i{display:block;font-style:normal;font-size:.62rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.menu{display:flex;align-items:center;gap:1.7rem}
+.menu a{font-size:.92rem;font-weight:500;color:#333a4d;position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--gold);transition:width .25s}
+.menu a:not(.btn):hover::after{width:100%}
+.nav-cta{display:inline-flex}
+.burger{display:none;background:none;border:0;padding:.4rem;cursor:pointer}
+.burger span{display:block;width:23px;height:2px;background:var(--navy);margin:5px 0;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.hero{position:relative;background:
+  radial-gradient(1100px 520px at 78% -10%,rgba(201,162,39,.22),transparent 62%),
+  linear-gradient(160deg,#0a1530 0%,var(--navy) 45%,#152a5e 100%);
+  color:#fff;padding:5.2rem 0 5.6rem;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:62px 62px;-webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 72%);mask-image:radial-gradient(ellipse at 50% 0%,#000,transparent 72%);pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:3.4rem;align-items:center}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4rem);color:#fff}
+.hero h1 em{font-style:normal;color:var(--gold-soft)}
+.hero p.lead{color:#c6cfe6;font-size:1.08rem;max-width:56ch;margin:1.3rem 0 2rem}
+.badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,162,39,.14);border:1px solid rgba(201,162,39,.4);color:var(--gold-soft);font-size:.76rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase;padding:.42rem .9rem;border-radius:999px;margin-bottom:1.3rem}
+.hero-actions{display:flex;gap:.85rem;flex-wrap:wrap}
+.trust{display:flex;gap:2.2rem;flex-wrap:wrap;margin-top:2.6rem;padding-top:1.7rem;border-top:1px solid rgba(255,255,255,.14)}
+.trust div strong{display:block;font-family:"Cormorant Garamond",serif;font-size:1.85rem;color:var(--gold-soft);line-height:1}
+.trust div span{font-size:.78rem;color:#9fabc7;letter-spacing:.04em}
+.hero-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:1.9rem;backdrop-filter:blur(9px)}
+.hero-card h3{color:#fff;font-size:1.5rem}
+.hero-card p{color:#b9c3dc;font-size:.9rem;margin:.5rem 0 1.3rem}
+.field{margin-bottom:.85rem}
+.field label{display:block;font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#9fabc7;margin-bottom:.35rem}
+.field input,.field select,.field textarea{width:100%;padding:.72rem .85rem;border-radius:9px;border:1px solid rgba(255,255,255,.2);background:rgba(10,20,45,.55);color:#fff;font-family:inherit;font-size:.92rem;transition:border-color .2s,box-shadow .2s}
+.field input::placeholder,.field textarea::placeholder{color:#7c88a6}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,39,.2)}
+.field select option{background:#0d1b3e;color:#fff}
+.hero-card .btn{width:100%;justify-content:center;margin-top:.5rem}
+.mini{font-size:.73rem;color:#8794b3;text-align:center;margin:.8rem 0 0}
+.mini.ok{color:#7fe0a5}.mini.err{color:#ff9b93}
+
+section{padding:5rem 0}
+.alt{background:var(--bg-alt)}
+h2.sec{font-size:clamp(2rem,3.6vw,2.75rem);color:var(--navy)}
+.sec-lead{color:var(--muted);max-width:62ch;margin:.4rem 0 0}
+.center .sec-lead{margin-inline:auto}
+
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:3rem}
+.area{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:2rem 1.9rem;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .22s ease,box-shadow .22s ease,border-color .22s}
+.area::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(180deg,var(--gold),var(--gold-dim));transform:scaleY(0);transform-origin:top;transition:transform .3s ease}
+.area:hover{transform:translateY(-5px);box-shadow:0 20px 44px -22px rgba(13,27,62,.42);border-color:#d5dae8}
+.area:hover::before{transform:scaleY(1)}
+.area .ico{width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,var(--navy),var(--navy-700));display:grid;place-items:center;margin-bottom:1.1rem}
+.area .ico svg{width:26px;height:26px;stroke:var(--gold-soft);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.area h3{font-size:1.6rem;color:var(--navy)}
+.area > p{color:var(--muted);font-size:.94rem;margin:.5rem 0 1.2rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.tags li{font-size:.83rem;font-weight:500;color:#33405f;background:#eef1f8;border:1px solid #dfe4f0;border-radius:999px;padding:.36rem .8rem}
+.area:hover .tags li{background:#fff}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;margin-top:3rem;counter-reset:s}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.4rem;position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;top:1.1rem;right:1.2rem;font-family:"Cormorant Garamond",serif;font-size:2.3rem;font-weight:700;color:#eceff6;line-height:1}
+.step h4{font-size:1.24rem;color:var(--navy);margin-bottom:.35rem;position:relative}
+.step p{font-size:.9rem;color:var(--muted);margin:0}
+
+.lawyers{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem;margin-top:3rem}
+.lawyer{display:flex;gap:1.3rem;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.9rem;box-shadow:var(--shadow)}
+.avatar{width:76px;height:76px;flex:none;border-radius:50%;background:linear-gradient(140deg,var(--navy),var(--navy-700));color:var(--gold-soft);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:700;border:2px solid var(--gold-dim)}
+.lawyer h3{font-size:1.36rem;color:var(--navy)}
+.cip{display:inline-block;font-size:.76rem;font-weight:600;letter-spacing:.05em;color:var(--gold-dim);background:#fbf6e6;border:1px solid #efe2b6;border-radius:6px;padding:.2rem .55rem;margin:.5rem 0 .7rem}
+.lawyer p{font-size:.9rem;color:var(--muted);margin:0}
+
+.dark{background:linear-gradient(160deg,#0a1530,var(--navy));color:#fff}
+.dark h2.sec{color:#fff}.dark .sec-lead{color:#b3bdd6}.dark .eyebrow{color:var(--gold-soft)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.why div{padding:1.7rem;border-radius:var(--radius);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13)}
+.why h4{color:#fff;font-size:1.28rem;margin-bottom:.4rem}
+.why p{color:#b3bdd6;font-size:.9rem;margin:0}
+
+.faq{max-width:820px;margin:2.6rem auto 0}
+details{border:1px solid var(--line);border-radius:11px;background:#fff;margin-bottom:.8rem;overflow:hidden}
+details[open]{border-color:#d3d9ea;box-shadow:var(--shadow)}
+summary{cursor:pointer;list-style:none;padding:1.15rem 3rem 1.15rem 1.35rem;font-weight:600;font-size:1rem;color:var(--navy);position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:1.35rem;top:50%;transform:translateY(-50%);font-size:1.45rem;color:var(--gold);font-weight:400}
+details[open] summary::after{content:"\2212"}
+details p{margin:0;padding:0 1.35rem 1.3rem;color:var(--muted);font-size:.94rem}
+
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.6rem;margin-top:3rem;align-items:start}
+.cbox{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem;display:flex;gap:1rem;align-items:center;margin-bottom:.9rem;transition:border-color .2s,transform .2s}
+.cbox:hover{border-color:var(--gold);transform:translateX(4px)}
+.cbox .ci{width:42px;height:42px;border-radius:11px;background:#f1f3fa;display:grid;place-items:center;flex:none}
+.cbox .ci svg{width:20px;height:20px;stroke:var(--navy);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cbox small{display:block;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cbox strong{font-size:1rem;color:var(--navy);font-weight:600}
+form.main{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:2rem;box-shadow:var(--shadow)}
+form.main .field label{color:var(--muted)}
+form.main input,form.main select,form.main textarea{background:#fbfcfe;border-color:#dde2ee;color:var(--ink)}
+form.main input::placeholder,form.main textarea::placeholder{color:#9aa2b8}
+form.main textarea{min-height:118px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.consent{display:flex;gap:.6rem;align-items:flex-start;font-size:.8rem;color:var(--muted);margin:.4rem 0 1.1rem}
+.consent input{width:auto;margin-top:.2rem;accent-color:var(--gold-dim)}
+form.main .btn{width:100%;justify-content:center}
+.formnote{margin:.9rem 0 0;font-size:.82rem;text-align:center;color:var(--muted)}
+.formnote.ok{color:#0d7a3f;font-weight:600}
+.formnote.err{color:#b3261e;font-weight:600}
+
+.band{background:linear-gradient(120deg,var(--gold-dim),var(--gold));color:#1c1505;padding:2.6rem 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:1.6rem;flex-wrap:wrap}
+.band h3{font-size:1.9rem;color:#1c1505}
+.band p{margin:.3rem 0 0;font-size:.95rem;color:#3a2c08}
+
+footer{background:#0a1226;color:#8f9bb8;padding:3.4rem 0 1.8rem;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.4rem}
+footer h5{font-family:Inter,sans-serif;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);margin:0 0 .9rem;font-weight:700}
+footer ul{list-style:none;padding:0;margin:0}
+footer li{margin-bottom:.5rem}
+footer a:hover{color:#fff}
+footer .brand b{color:#fff}
+footer .brand i{color:#7b88a8}
+.fbot{border-top:1px solid rgba(255,255,255,.09);margin-top:2.6rem;padding-top:1.4rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.8rem;color:#6f7c9c}
+
+.float{position:fixed;right:18px;bottom:18px;z-index:80;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.75);animation:pulse 2.6s infinite}
+.float svg{width:31px;height:31px;fill:#fff}
+@keyframes pulse{0%,100%{box-shadow:0 12px 30px -8px rgba(37,211,102,.75),0 0 0 0 rgba(37,211,102,.5)}50%{box-shadow:0 12px 30px -8px rgba(37,211,102,.75),0 0 0 14px rgba(37,211,102,0)}}
+
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero .wrap,.contact-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why,.fgrid{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .menu{position:fixed;left:0;right:0;top:104px;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:.6rem 1.25rem 1.4rem;border-bottom:1px solid var(--line);box-shadow:0 20px 40px -20px rgba(13,27,62,.4);display:none}
+  .menu.show{display:flex}
+  .menu a:not(.btn){padding:.85rem 0;border-bottom:1px solid var(--line)}
+  .menu .btn{margin-top:.9rem;justify-content:center}
+  .burger{display:block}
+  .nav-cta{display:none}
+  .grid2,.lawyers,.steps{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+  section{padding:3.6rem 0}
+  .topbar .wrap{gap:.9rem;font-size:.74rem}
+  .lawyer{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>&#9878;&#65039; Atención de urgencias penales 24/7</span>
+    <a href="tel:+51900000000">&#128222; +51 900 000 000</a>
+    <a href="mailto:contacto@ikerasociados.pe">&#9993;&#65039; contacto@ikerasociados.pe</a>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio">
+      <span class="mark">I&amp;A</span>
+      <span><b>Iker &amp; Asociados</b><i>Estudio Jurídico</i></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#areas">Áreas</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-gold" href="https://wa.me/51900000000?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal" target="_blank" rel="noopener">Consulta ahora</a>
+    </nav>
+    <a class="btn btn-gold nav-cta" href="#contacto">Consulta gratuita</a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="badge">Derecho Penal &middot; Derecho de Familia</span>
+      <h1>Defensa legal <em>firme</em>, cercana y a tiempo.</h1>
+      <p class="lead">Estudio Jurídico Iker &amp; Asociados. Abogados colegiados especialistas en la defensa penal y en la protección de la familia. Actuamos con rapidez cuando cada hora cuenta.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" href="https://wa.me/51900000000?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal%20urgente" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5 0-1.1.2-3.6-.8-3-1.3-4.9-4.4-5-4.6-.2-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2 0 .4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.2.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3 0 .1 0 .6-.2 1.3Z"/></svg>
+          WhatsApp inmediato
+        </a>
+        <a class="btn btn-ghost" href="#areas">Ver áreas de práctica</a>
+      </div>
+      <div class="trust">
+        <div><strong>24/7</strong><span>Urgencias penales</span></div>
+        <div><strong>2</strong><span>Abogados colegiados</span></div>
+        <div><strong>100%</strong><span>Atención personalizada</span></div>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <h3>Consulta gratuita</h3>
+      <p>Cuéntenos su caso. Le respondemos el mismo día.</p>
+      <form id="quickForm" novalidate>
+        <div class="field">
+          <label for="qn">Nombre completo</label>
+          <input id="qn" name="nombre" type="text" placeholder="Ej. María Rodríguez" required>
+        </div>
+        <div class="field">
+          <label for="qp">Teléfono / WhatsApp</label>
+          <input id="qp" name="telefono" type="tel" placeholder="+51 900 000 000" required>
+        </div>
+        <div class="field">
+          <label for="qa">Materia</label>
+          <select id="qa" name="materia" required>
+            <option value="">Seleccione&hellip;</option>
+            <option>Derecho Penal &mdash; Detención</option>
+            <option>Derecho Penal &mdash; Prisión preventiva</option>
+            <option>Derecho Penal &mdash; Cesación de prisión preventiva</option>
+            <option>Derecho Penal &mdash; Otros delitos</option>
+            <option>Familia &mdash; Alimentos</option>
+            <option>Familia &mdash; Reducción / Prorrateo</option>
+            <option>Familia &mdash; Divorcio</option>
+            <option>Familia &mdash; Tenencia / Régimen de visitas</option>
+            <option>Otra consulta</option>
+          </select>
+        </div>
+        <button class="btn btn-gold" type="submit">Solicitar llamada</button>
+        <p class="mini" id="quickNote">Sus datos son tratados con estricta confidencialidad.</p>
+      </form>
+    </aside>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Áreas de práctica</p>
+      <h2 class="sec">Especialistas donde más se necesita</h2>
+      <div class="rule"></div>
+      <p class="sec-lead">Concentramos nuestra práctica en dos materias de alta urgencia y sensibilidad, para ofrecer una defensa realmente especializada.</p>
+    </div>
+
+    <div class="grid2">
+      <article class="area rv">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M7 7l-3 6a3 3 0 0 0 6 0L7 7Zm10 0-3 6a3 3 0 0 0 6 0l-3-6ZM8 21h8"/></svg></div>
+        <h3>Derecho Penal</h3>
+        <p>Defensa técnica desde la primera diligencia policial hasta el juicio oral y la etapa de ejecución. Intervención inmediata en detenciones.</p>
+        <ul class="tags">
+          <li>Detenciones</li><li>Prisión preventiva</li><li>Cesación de prisión preventiva</li>
+          <li>Comparecencia con restricciones</li><li>Apelaciones</li><li>Terminación anticipada</li>
+          <li>Delitos contra el patrimonio</li><li>Delitos contra la vida y la salud</li>
+          <li>Omisión a la asistencia familiar</li><li>Delitos de corrupción</li>
+        </ul>
+      </article>
+
+      <article class="area rv">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM3 20a6 6 0 0 1 12 0M15.5 14.2A5 5 0 0 1 21 19"/></svg></div>
+        <h3>Derecho de Familia</h3>
+        <p>Acompañamiento sensible y estratégico en los procesos que definen la vida de su familia, buscando siempre el interés superior del niño.</p>
+        <ul class="tags">
+          <li>Alimentos</li><li>Aumento de alimentos</li><li>Reducción de alimentos</li>
+          <li>Prorrateo de alimentos</li><li>Exoneración</li><li>Divorcio por causal</li>
+          <li>Divorcio rápido</li><li>Tenencia</li><li>Régimen de visitas</li>
+          <li>Filiación</li><li>Violencia familiar</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="proceso">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Cómo trabajamos</p>
+      <h2 class="sec">Un proceso claro, sin sorpresas</h2>
+      <div class="rule"></div>
+      <p class="sec-lead">Desde el primer contacto sabrá qué esperar, qué haremos y cuánto costará.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h4>Contacto</h4><p>Escríbanos por WhatsApp o llame. Atendemos urgencias penales a cualquier hora.</p></div>
+      <div class="step rv"><h4>Evaluación</h4><p>Analizamos su caso, los documentos y los plazos. Le explicamos escenarios reales.</p></div>
+      <div class="step rv"><h4>Estrategia</h4><p>Definimos la línea de defensa y los honorarios por escrito, sin costos ocultos.</p></div>
+      <div class="step rv"><h4>Defensa</h4><p>Actuamos ante fiscalía y juzgado, y le informamos de cada avance del proceso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="equipo">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Nuestro equipo</p>
+      <h2 class="sec">Abogados colegiados a cargo</h2>
+      <div class="rule"></div>
+      <p class="sec-lead">Su caso es llevado directamente por los titulares del estudio, no por intermediarios.</p>
+    </div>
+    <div class="lawyers">
+      <article class="lawyer rv">
+        <div class="avatar">JP</div>
+        <div>
+          <h3>Juan Pablo II Reaño Arana</h3>
+          <span class="cip">C.A.L.L. N° 6035</span>
+          <p>Abogado penalista. Defensa en detenciones, audiencias de prisión preventiva y cesación, y litigio oral en las distintas etapas del proceso penal.</p>
+        </div>
+      </article>
+      <article class="lawyer rv">
+        <div class="avatar">JZ</div>
+        <div>
+          <h3>José Elve Zuloeta Coronel</h3>
+          <span class="cip">I.C.A.L. N° 10724</span>
+          <p>Abogado especialista en derecho de familia y litigio penal. Procesos de alimentos, prorrateo, divorcio, tenencia y régimen de visitas.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Por qué elegirnos</p>
+      <h2 class="sec">Compromiso real con cada caso</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="why">
+      <div class="rv"><h4>Respuesta inmediata</h4><p>En materia penal las primeras 24 horas son decisivas. Atendemos urgencias y acudimos a la dependencia policial.</p></div>
+      <div class="rv"><h4>Honorarios transparentes</h4><p>Le entregamos una propuesta clara por escrito antes de iniciar. Sin cobros sorpresa durante el proceso.</p></div>
+      <div class="rv"><h4>Confidencialidad absoluta</h4><p>Todo lo que nos comparte está protegido por el secreto profesional. Su caso se trata con la máxima reserva.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="sec">Lo que más nos consultan</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary>Detuvieron a un familiar, ¿qué hago ahora?</summary><p>Contáctenos de inmediato por WhatsApp o teléfono. La detención tiene plazos muy cortos y la presencia de un abogado desde la primera declaración es fundamental para la defensa. Acudimos a la dependencia policial o a la fiscalía.</p></details>
+      <details class="rv"><summary>¿Se puede pedir la cesación de la prisión preventiva?</summary><p>Sí. Cuando surgen nuevos elementos de convicción que demuestran que ya no concurren los motivos que determinaron la medida, se puede solicitar su cesación ante el juez de investigación preparatoria. Evaluamos su caso y preparamos la solicitud con la sustentación adecuada.</p></details>
+      <details class="rv"><summary>¿Cuánto demora un proceso de alimentos?</summary><p>Depende del juzgado y de la carga procesal, pero es un proceso sumarísimo, pensado para ser rápido. Además, puede solicitarse una asignación anticipada de alimentos mientras dura el proceso.</p></details>
+      <details class="rv"><summary>Tengo hijos con distintas madres, ¿puedo prorratear la pensión?</summary><p>Sí. El prorrateo de alimentos permite distribuir proporcionalmente su ingreso entre todas las pensiones cuando la suma de descuentos supera el límite legal. Se tramita ante el juzgado correspondiente.</p></details>
+      <details class="rv"><summary>¿La primera consulta tiene costo?</summary><p>No. La evaluación inicial de su caso es gratuita. Luego de conocer los detalles le presentamos una propuesta de honorarios clara y por escrito.</p></details>
+      <details class="rv"><summary>¿Atienden casos fuera de la ciudad?</summary><p>Sí. Coordinamos consultas por videollamada y WhatsApp, y evaluamos el patrocinio en otras jurisdicciones según la materia y la etapa del proceso.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="contacto">
+  <div class="wrap">
+    <div class="center rv">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="sec">Cuéntenos su caso</h2>
+      <div class="rule"></div>
+      <p class="sec-lead">Complete el formulario o escríbanos directamente. Respondemos el mismo día.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="rv">
+        <a class="cbox" href="https://wa.me/51900000000" target="_blank" rel="noopener">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2.2 2A19 19 0 0 1 3 5.2 2 2 0 0 1 5 3h4a2 2 0 0 1 2 1.7l.6 3a2 2 0 0 1-.6 1.8L9.8 11a15 15 0 0 0 6 6l1.5-1.2a2 2 0 0 1 1.8-.4l3 .6A2 2 0 0 1 21 15Z"/></svg></span>
+          <span><small>WhatsApp / Teléfono</small><strong>+51 900 000 000</strong></span>
+        </a>
+        <a class="cbox" href="mailto:contacto@ikerasociados.pe">
+          <span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <span><small>Correo</small><strong>contacto@ikerasociados.pe</strong></span>
+        </a>
+        <div class="cbox">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+          <span><small>Oficina</small><strong>Atención con cita previa</strong></span>
+        </div>
+        <div class="cbox">
+          <span class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <span><small>Horario</small><strong>Lun a Sáb 8:00 &ndash; 20:00 &middot; Urgencias 24/7</strong></span>
+        </div>
+      </div>
+
+      <form class="main rv" id="mainForm" novalidate>
+        <div class="row2">
+          <div class="field"><label for="n">Nombre completo</label><input id="n" name="nombre" type="text" placeholder="Nombres y apellidos" required></div>
+          <div class="field"><label for="t">Teléfono</label><input id="t" name="telefono" type="tel" placeholder="+51 900 000 000" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="e">Correo (opcional)</label><input id="e" name="email" type="email" placeholder="correo@ejemplo.com"></div>
+          <div class="field"><label for="m">Materia</label>
+            <select id="m" name="materia" required>
+              <option value="">Seleccione&hellip;</option>
+              <option>Derecho Penal</option>
+              <option>Derecho de Familia</option>
+              <option>Otra consulta</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="d">Describa su caso</label><textarea id="d" name="mensaje" placeholder="Cuéntenos brevemente qué ocurrió, en qué etapa está y qué necesita." required></textarea></div>
+        <label class="consent"><input type="checkbox" id="c" required><span>Autorizo el tratamiento de mis datos personales para ser contactado por el estudio jurídico.</span></label>
+        <button class="btn btn-gold" type="submit">Enviar consulta por WhatsApp</button>
+        <p class="formnote" id="mainNote">Se abrirá WhatsApp con su consulta lista para enviar.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="wrap">
+    <div>
+      <h3>¿Detención en curso? Cada hora cuenta.</h3>
+      <p>Atendemos urgencias penales las 24 horas, todos los días del año.</p>
+    </div>
+    <a class="btn btn-dark" href="tel:+51900000000">Llamar ahora: +51 900 000 000</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="#inicio">
+          <span class="mark">I&amp;A</span>
+          <span><b>Iker &amp; Asociados</b><i>Asesoría Legal</i></span>
+        </a>
+        <p style="max-width:38ch;margin-top:1rem">Estudio jurídico especializado en Derecho Penal y Derecho de Familia. Defensa técnica, cercana y responsable.</p>
+      </div>
+      <div>
+        <h5>Áreas</h5>
+        <ul>
+          <li><a href="#areas">Derecho Penal</a></li>
+          <li><a href="#areas">Prisión preventiva</a></li>
+          <li><a href="#areas">Alimentos</a></li>
+          <li><a href="#areas">Divorcios</a></li>
+          <li><a href="#areas">Tenencia y visitas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:+51900000000">+51 900 000 000</a></li>
+          <li><a href="mailto:contacto@ikerasociados.pe">contacto@ikerasociados.pe</a></li>
+          <li><a href="https://wa.me/51900000000" target="_blank" rel="noopener">WhatsApp 24/7</a></li>
+          <li>Lun a Sáb &middot; 8:00 &ndash; 20:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; <span id="y"></span> Estudio Jurídico Iker &amp; Asociados. Todos los derechos reservados.</span>
+      <span>C.A.L.L. N° 6035 &middot; I.C.A.L. N° 10724</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/51900000000?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.2c-.2.7-1.3 1.3-1.9 1.3-.5 0-1.1.2-3.6-.8-3-1.3-4.9-4.4-5-4.6-.2-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2 0 .4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.2.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l2 1c.3.1.4.2.5.3 0 .1 0 .6-.2 1.3Z"/></svg>
+</a>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"Estudio Jurídico Iker & Asociados","description":"Abogados especialistas en Derecho Penal y Derecho de Familia.","telephone":"+51900000000","email":"contacto@ikerasociados.pe","areaServed":"PE","priceRange":"$$","openingHours":"Mo-Sa 08:00-20:00","employee":[{"@type":"Person","name":"Juan Pablo II Reaño Arana","jobTitle":"Abogado","identifier":"C.A.L.L. N° 6035"},{"@type":"Person","name":"José Elve Zuloeta Coronel","jobTitle":"Abogado","identifier":"I.C.A.L. N° 10724"}],"knowsAbout":["Derecho Penal","Prisión preventiva","Cesación de prisión preventiva","Alimentos","Divorcio","Tenencia","Régimen de visitas"]}
+</script>
+
+<script>
+(function(){
+  var WA = "51900000000";
+  document.getElementById('y').textContent = new Date().getFullYear();
+
+  var burger = document.getElementById('burger'), menu = document.getElementById('menu'), nav = document.getElementById('nav');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('show');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', function(e){
+    if(e.target.closest('a')){ menu.classList.remove('show'); burger.classList.remove('open'); }
+  });
+  addEventListener('scroll', function(){ nav.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px'});
+  document.querySelectorAll('.rv').forEach(function(el,i){ el.style.transitionDelay = (i%4)*70 + 'ms'; io.observe(el); });
+
+  function firstInvalid(f){
+    var bad = null;
+    Array.prototype.forEach.call(f.querySelectorAll('[required]'), function(el){
+      var empty = el.type === 'checkbox' ? !el.checked : !el.value.trim();
+      el.style.borderColor = empty ? '#e0655c' : '';
+      if(empty && !bad) bad = el;
+    });
+    if(bad) bad.focus();
+    return bad;
+  }
+  function openWa(msg){ window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank', 'noopener'); }
+
+  var qf = document.getElementById('quickForm'), qn = document.getElementById('quickNote');
+  qf.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if(firstInvalid(qf)){ qn.textContent = 'Complete los campos marcados.'; qn.className = 'mini err'; return; }
+    openWa('Hola, soy ' + qf.nombre.value + '. Materia: ' + qf.materia.value + '. Mi teléfono: ' + qf.telefono.value + '. Necesito asesoría legal.');
+    qn.textContent = 'Abriendo WhatsApp…'; qn.className = 'mini ok'; qf.reset();
+  });
+
+  var mf = document.getElementById('mainForm'), mn = document.getElementById('mainNote');
+  mf.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    if(firstInvalid(mf)){ mn.textContent = 'Complete los campos obligatorios y acepte el tratamiento de datos.'; mn.className = 'formnote err'; return; }
+    openWa('Consulta desde la web\n\nNombre: ' + mf.nombre.value + '\nTeléfono: ' + mf.telefono.value +
+         (mf.email.value ? '\nCorreo: ' + mf.email.value : '') + '\nMateria: ' + mf.materia.value + '\n\nCaso: ' + mf.mensaje.value);
+    mn.textContent = '¡Listo! Se abrió WhatsApp con su consulta.'; mn.className = 'formnote ok';
+    mf.reset(); document.getElementById('c').checked = false;
+  });
+})();
+</script>
+</body>
+</html>
