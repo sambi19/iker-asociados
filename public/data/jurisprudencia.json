@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ejemplo-3",
+    "titulo": "EJEMPLO: reemplace esta entrada por una publicación real",
+    "categoria": "general",
+    "fecha": "2026-09-05",
+    "resumen": "Esta es una entrada de muestra para que se vea cómo queda la sección. Bórrela cuando publique la primera novedad real.",
+    "cuerpo": [
+      "Cada entrada de este archivo se muestra en la página de Jurisprudencia y las tres más recientes aparecen también en la portada.",
+      "Para publicar, edite el archivo data/jurisprudencia.json. La página admin.html arma el bloque de texto por usted, sin necesidad de escribir código."
+    ],
+    "fuente": "",
+    "url": ""
+  },
+  {
+    "id": "ejemplo-2",
+    "titulo": "EJEMPLO: criterio sobre cesación de prisión preventiva",
+    "categoria": "penal",
+    "fecha": "2026-08-20",
+    "resumen": "Muestra de cómo se ve una entrada de materia penal, con su etiqueta de color y su enlace a la fuente oficial.",
+    "cuerpo": [
+      "Aquí va el resumen del criterio o de la norma, redactado en lenguaje claro para que un cliente lo entienda.",
+      "Conviene cerrar explicando qué cambia en la práctica para quien tiene un proceso en curso."
+    ],
+    "fuente": "Enlace a la fuente oficial",
+    "url": ""
+  },
+  {
+    "id": "ejemplo-1",
+    "titulo": "EJEMPLO: novedad en procesos de alimentos",
+    "categoria": "familia",
+    "fecha": "2026-07-14",
+    "resumen": "Muestra de una entrada de derecho de familia. Las categorías disponibles son penal, familia y general.",
+    "cuerpo": [
+      "El campo cuerpo admite varios párrafos: cada texto entre comillas es un párrafo distinto.",
+      "Si deja los campos fuente y url vacíos, simplemente no se muestra el enlace."
+    ],
+    "fuente": "",
+    "url": ""
+  }
+]

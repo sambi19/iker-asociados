@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Publicar en Jurisprudencia | Iker Asociados</title>
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  .pasos-guia{counter-reset:g;list-style:none;padding:0;margin:1.4rem 0 0}
+  .pasos-guia li{counter-increment:g;position:relative;padding:0 0 1.1rem 2.5rem;font-size:.95rem;color:var(--tinta-2)}
+  .pasos-guia li::before{
+    content:counter(g);position:absolute;left:0;top:-1px;width:1.6rem;height:1.6rem;
+    display:grid;place-items:center;background:var(--noche-900);color:var(--papel);
+    font-size:.78rem;font-weight:700;font-family:"Public Sans",sans-serif;
+  }
+  .salida{
+    width:100%;min-height:260px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.83rem;line-height:1.6;padding:1rem;background:var(--noche-950);color:oklch(0.90 0.02 258);
+    border:1px solid var(--linea);border-radius:2px;resize:vertical;
+  }
+</style>
+</head>
+<body>
+
+<header class="tope">
+  <div class="env">
+    <a class="marca" href="index.html">
+      <img src="assets/img/marca.svg" alt="" width="56" height="56">
+      <span class="marca-txt"><b>IKER ASOCIADOS</b><span>Panel de publicación</span></span>
+    </a>
+    <nav class="nav" id="nav" data-abierto="false">
+      <a href="jurisprudencia.html">Ver la sección publicada</a>
+    </nav>
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="seccion">
+  <div class="env-angosto">
+    <hr class="filete">
+    <h1 class="t-1">Publicar una novedad</h1>
+    <p class="plomo" style="margin-top:.9rem">Llene el formulario y copie el texto que aparece abajo dentro del archivo <code>data/jurisprudencia.json</code> del repositorio. No hace falta escribir código.</p>
+
+    <div style="background:var(--papel-2);padding:1.5rem;margin:2.2rem 0;border:1px solid var(--linea)">
+      <h2 class="t-3" style="margin-bottom:.3rem">Cómo se publica</h2>
+      <ol class="pasos-guia">
+        <li>Complete los campos y pulse <b>Generar</b>.</li>
+        <li>Pulse <b>Copiar</b>.</li>
+        <li>Abra el archivo <code>public/data/jurisprudencia.json</code> en GitHub y pulse el lápiz para editarlo.</li>
+        <li>Pegue el bloque copiado justo después del primer corchete <code>[</code>, seguido de una coma si ya hay otras entradas.</li>
+        <li>Pulse <b>Commit changes</b>. Cloudflare publica el cambio en menos de un minuto.</li>
+      </ol>
+    </div>
+
+    <form class="form" id="gen" novalidate>
+      <div class="par">
+        <div class="campo">
+          <label for="titulo">Título</label>
+          <input id="titulo" type="text" placeholder="Ley que modifica el plazo de la prisión preventiva" required>
+        </div>
+        <div class="campo">
+          <label for="fecha">Fecha</label>
+          <input id="fecha" type="date" required>
+        </div>
+      </div>
+      <div class="campo">
+        <label for="categoria">Materia</label>
+        <select id="categoria">
+          <option value="penal">Penal</option>
+          <option value="familia">Familia</option>
+          <option value="general" selected>General</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="resumen">Resumen en una frase</label>
+        <input id="resumen" type="text" placeholder="Qué cambia, dicho en una línea" required>
+      </div>
+      <div class="campo">
+        <label for="cuerpo">Contenido (deje una línea en blanco entre párrafos)</label>
+        <textarea id="cuerpo" style="min-height:170px" placeholder="Primer párrafo.&#10;&#10;Segundo párrafo."></textarea>
+      </div>
+      <div class="par">
+        <div class="campo">
+          <label for="fuente">Nombre de la fuente (opcional)</label>
+          <input id="fuente" type="text" placeholder="Diario Oficial El Peruano">
+        </div>
+        <div class="campo">
+          <label for="url">Enlace a la fuente (opcional)</label>
+          <input id="url" type="url" placeholder="https://">
+        </div>
+      </div>
+      <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+        <button class="btn btn-noche" type="submit">Generar</button>
+        <button class="btn btn-linea-oscura" type="button" id="copiar">Copiar</button>
+      </div>
+      <p class="aviso" role="status" aria-live="polite" id="aviso"></p>
+    </form>
+
+    <label for="salida" class="campo" style="margin-top:1.6rem;display:block">
+      <span style="font-size:.79rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--tinta-2);display:block;margin-bottom:.4rem">Texto para pegar</span>
+    </label>
+    <textarea class="salida" id="salida" readonly aria-label="Texto generado para pegar en el archivo"></textarea>
+
+    <p style="margin-top:2rem;font-size:.88rem;color:var(--tinta-2)">
+      Esta página es solo una ayuda para redactar. No guarda nada por sí sola: el cambio se publica cuando usted lo confirma en GitHub.
+    </p>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="env">
+    <div class="pie__legal" style="margin-top:0;border-top:0;padding-top:0">
+      <span>&copy; <span data-anio></span> Estudio Jurídico Iker Asociados</span>
+      <span><a href="index.html">Volver al sitio</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+<script>
+(function () {
+  'use strict';
+  var form = document.getElementById('gen');
+  var salida = document.getElementById('salida');
+  var aviso = document.getElementById('aviso');
+
+  function slug(t) {
+    return t.toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '')
+      .slice(0, 60) || 'entrada';
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var titulo = document.getElementById('titulo').value.trim();
+    var fecha = document.getElementById('fecha').value;
+    var resumen = document.getElementById('resumen').value.trim();
+    if (!titulo || !fecha || !resumen) {
+      aviso.textContent = 'Complete título, fecha y resumen.';
+      aviso.dataset.estado = 'error';
+      return;
+    }
+    var cuerpo = document.getElementById('cuerpo').value
+      .split(/\n\s*\n/).map(function (p) { return p.trim().replace(/\s*\n\s*/g, ' '); })
+      .filter(Boolean);
+
+    var entrada = {
+      id: slug(titulo) + '-' + fecha,
+      titulo: titulo,
+      categoria: document.getElementById('categoria').value,
+      fecha: fecha,
+      resumen: resumen,
+      cuerpo: cuerpo,
+      fuente: document.getElementById('fuente').value.trim(),
+      url: document.getElementById('url').value.trim()
+    };
+
+    salida.value = JSON.stringify(entrada, null, 2)
+      .split('\n').map(function (l, i) { return i === 0 ? '  ' + l : '  ' + l; }).join('\n');
+    aviso.textContent = 'Listo. Ahora pulse Copiar.';
+    aviso.dataset.estado = 'ok';
+  });
+
+  document.getElementById('copiar').addEventListener('click', function () {
+    if (!salida.value) {
+      aviso.textContent = 'Primero pulse Generar.';
+      aviso.dataset.estado = 'error';
+      return;
+    }
+    salida.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(salida.value).then(function () {
+        aviso.textContent = 'Copiado. Péguelo en data/jurisprudencia.json.';
+        aviso.dataset.estado = 'ok';
+      }, function () {});
+    } else if (ok) {
+      aviso.textContent = 'Copiado. Péguelo en data/jurisprudencia.json.';
+      aviso.dataset.estado = 'ok';
+    } else {
+      aviso.textContent = 'Copie el texto manualmente desde el recuadro.';
+      aviso.dataset.estado = 'error';
+    }
+  });
+})();
+</script>
+</body>
+</html>
