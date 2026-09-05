@@ -69,11 +69,12 @@ npx wrangler pages deploy public --project-name=iker-asociados
 | Correo | `contacto@ikerasociados.pe` (sin confirmar) | las cinco páginas |
 | Dirección de oficina | "Atención con cita previa" | `estudio.html` |
 | Dominio | `ikerasociados.pages.dev` | `robots.txt`, `sitemap.xml` |
-| Escudo | Recreación vectorial | `assets/img/escudo.svg` y `marca.svg` |
 
-El escudo es una recreación en SVG hecha a partir de la foto del letrero, no el
-archivo original de la marca. Si aparece el archivo original en alta resolución,
-conviene reemplazar `escudo.svg` y `marca.svg` por él.
+El logo es el archivo original del estudio. Se recortó y se le quitó el fondo de
+madera convirtiendo el brillo en canal alfa, por lo que queda transparente:
+`logo.png` (emblema y leyenda, para la portada) y `logo-marca.png` (solo el
+emblema, para cabecera y pie). El favicon sigue siendo un SVG simplificado
+porque el escudo completo se vuelve ilegible a 16 píxeles.
 
 ## Fotografías
 
