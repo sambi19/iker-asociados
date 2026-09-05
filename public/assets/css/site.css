@@ -1,7 +1,7 @@
 /* =========================================================
    Iker Asociados — sistema de diseño
    Azul noche + latón envejecido + papel cálido
-   Tipografías: Literata (títulos) / Public Sans (texto)
+   Tipografías: EB Garamond (títulos) / Public Sans (texto)
    ========================================================= */
 
 *,*::before,*::after{box-sizing:border-box}
@@ -60,10 +60,10 @@ a{color:inherit;text-decoration:none}
 :focus-visible{outline:2.5px solid var(--laton);outline-offset:3px;border-radius:2px}
 
 h1,h2,h3,h4{
-  font-family:Literata,Georgia,"Times New Roman",serif;
+  font-family:"EB Garamond",Georgia,"Times New Roman",serif;
   font-weight:600;
   line-height:1.12;
-  letter-spacing:-0.015em;
+  letter-spacing:-0.004em;
   margin:0;
   text-wrap:balance;
 }
@@ -74,10 +74,10 @@ p,li{text-wrap:pretty}
 .env-angosto{width:min(100% - 2.75rem,860px);margin-inline:auto}
 
 /* escala tipográfica, razón 1.32 */
-.t-hero{font-size:clamp(2.65rem,1.5rem + 5.1vw,5.1rem);line-height:1.02;letter-spacing:-0.028em}
-.t-1{font-size:clamp(2.05rem,1.35rem + 2.9vw,3.4rem);line-height:1.08}
-.t-2{font-size:clamp(1.55rem,1.2rem + 1.5vw,2.3rem)}
-.t-3{font-size:clamp(1.22rem,1.1rem + 0.55vw,1.5rem)}
+.t-hero{font-size:clamp(2.9rem,1.6rem + 5.5vw,5.5rem);line-height:1.04;letter-spacing:-0.012em}
+.t-1{font-size:clamp(2.2rem,1.45rem + 3.1vw,3.65rem);line-height:1.1}
+.t-2{font-size:clamp(1.68rem,1.28rem + 1.6vw,2.5rem)}
+.t-3{font-size:clamp(1.32rem,1.16rem + 0.6vw,1.62rem)}
 
 .plomo{color:var(--tinta-2);max-width:var(--texto)}
 .plomo-claro{color:var(--noche-300);max-width:var(--texto)}
@@ -127,7 +127,7 @@ p,li{text-wrap:pretty}
 .marca{display:flex;align-items:center;gap:.85rem;flex:none}
 .marca img{height:46px;width:auto}
 .marca-txt b{
-  display:block;font-family:Literata,serif;font-size:1.16rem;font-weight:600;
+  display:block;font-family:"EB Garamond",Georgia,serif;font-size:1.16rem;font-weight:600;
   color:var(--papel);letter-spacing:.055em;line-height:1.1;
 }
 .marca-txt span{
@@ -176,7 +176,7 @@ p,li{text-wrap:pretty}
   border-top:1px solid color-mix(in oklch,var(--papel) 16%,transparent);
 }
 .credenciales div span{display:block;font-size:.755rem;letter-spacing:.14em;text-transform:uppercase;color:var(--laton);font-weight:600}
-.credenciales div b{display:block;font-family:Literata,serif;font-weight:500;font-size:1.02rem;color:var(--papel);margin-top:.25rem}
+.credenciales div b{display:block;font-family:"EB Garamond",Georgia,serif;font-weight:500;font-size:1.02rem;color:var(--papel);margin-top:.25rem}
 
 .portada__escudo{display:grid;place-items:center}
 .portada__escudo img{width:min(100%,395px);height:auto;filter:drop-shadow(0 18px 44px oklch(0 0 0 / .55))}
@@ -200,7 +200,7 @@ p,li{text-wrap:pretty}
 }
 .materia:first-child{border-top:0;padding-top:0}
 .materia__num{
-  font-family:Literata,serif;font-size:.83rem;font-weight:600;letter-spacing:.2em;
+  font-family:"EB Garamond",Georgia,serif;font-size:.83rem;font-weight:600;letter-spacing:.2em;
   color:var(--laton-bajo);display:block;margin-bottom:.75rem;
 }
 .materia h3{margin-bottom:.85rem}
@@ -222,7 +222,7 @@ p,li{text-wrap:pretty}
 .pasos{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:0}
 .pasos li{padding:1.75rem 1.6rem 1.75rem 0;border-top:2px solid var(--noche-900)}
 .pasos li + li{padding-left:1.6rem;border-left:1px solid var(--linea)}
-.pasos b{display:block;font-family:Literata,serif;font-size:1.16rem;font-weight:600;margin-bottom:.4rem}
+.pasos b{display:block;font-family:"EB Garamond",Georgia,serif;font-size:1.16rem;font-weight:600;margin-bottom:.4rem}
 .pasos span{font-size:.925rem;color:var(--tinta-2)}
 
 /* ---------- equipo ---------- */

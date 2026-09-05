@@ -17,12 +17,14 @@ Todo el color se define en OKLCH, en `assets/css/site.css`.
 | Alerta | `--alerta` | Etiqueta Penal, errores de formulario |
 
 ## Tipografía
-- **Literata** para títulos. Serif de pantalla con aire de documento oficial.
+- **EB Garamond** para títulos. Serif clásica de tradición humanista; hace juego con
+  las capitales romanas grabadas del logo.
 - **Public Sans** para texto. Es la tipografía del sistema de diseño del gobierno
   de EE.UU.: institucional y neutra, sin personalidad de marca de software.
 
 Se descartaron a propósito Cormorant, Playfair e Inter: son las opciones reflejo
-que producen el aspecto de plantilla generada.
+que producen el aspecto de plantilla generada. Garamond lleva interletraje casi
+neutro (-0.004em): el negativo fuerte que pedía Literata la aprieta demasiado.
 
 Escala fluida con `clamp()`, razón cercana a 1.32. Línea de texto tope 68ch.
 
